@@ -8,7 +8,7 @@ def main():
     print("\n")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("Welcome to the Nielsen Custom Splunk App Creator!")
+    print("Welcome to the Custom Splunk App Creator!")
     print("    I was created to make your life easier :-)")
     print("       Capabilities: 1 Custom App Creation       ")
     print("       Capabilities: Up to 8 log source stanzas  ")
@@ -16,17 +16,17 @@ def main():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("\n")
     print("Please adhere to the following naming convention:")
-    print("Networking/FW Appliances:     NLSN_<Brand>_<Model>")
-    print("Web/App Technology:     NLSN_<OS>_<Technology><LogType>")
+    print("Networking/FW Appliances:     <YourCompany_<Brand>_<Model>")
+    print("Web/App Technology:     YourCompany_<OS>_<Technology><LogType>")
     print("\n")
     print("Examples:")
-    print("Cisco Meraki Switch: NLSN_Cisco_Meraki")
-    print("Cisco Nexus Switch: NLSN_Cisco_Nexus")
+    print("Cisco Meraki Switch: Ex_Cisco_Meraki")
+    print("Cisco Nexus Switch: Ex_Cisco_Nexus")
     print("\n")
     print("\n")
     print("Examples:")
-    print("Apache - NLSN_nix_Apache")
-    print("strongDM Gateway Logs: NLSN_nix_strongDMGwLogs")
+    print("Apache - Ex_nix_Apache")
+    print("strongDM Gateway Logs: Ex_nix_strongDMGwLogs")
     print("\n")
     print("-------------------------------------------------")
     print("\n")
@@ -34,7 +34,7 @@ def main():
 
     # Create directory for App, define Parent directory, and include a local
     directory = app_dir
-    parent_dir = "/home/mcs_automation/Splunk"
+    parent_dir = "<change me>"
     subdirectory ="local"
 
     # Path
@@ -97,7 +97,7 @@ def main():
 
         print("\n")
         print("Next steps:\n")
-        print("     1. Navigate to /home/mcs_automation/Splunk/ in WinSCP. \n")
+        print("     1. Navigate to <change me dir> in WinSCP. \n")
         print("     2. Copy the newly created Splunk App \n")
         print("     3. Open Sourcetree \n")
         print("     4. Use 'deployment-server-splunk' repo \n")
